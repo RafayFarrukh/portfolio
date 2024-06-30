@@ -7,19 +7,19 @@
     It is a personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects. 
     <br/>
     <strong>Site URL / Demo » </strong> 
-    <a href="https://hashirshoaeb.github.io/home">hashirshoaeb.github.io/home</a>
+    <a href="https://RafayFarrukh.github.io/home">RafayFarrukh.github.io/home</a>
     <br />
     <br />
-    <a href="https://hashirshoaeb.github.io">About Me</a>
+    <a href="https://RafayFarrukh.github.io">About Me</a>
   </p>
 </p>
 
-![GitHub contributors](https://img.shields.io/github/contributors/hashirshoaeb/home?color=ffcc66&style=for-the-badge)
-![GitHub stars](https://img.shields.io/github/stars/hashirshoaeb/home?color=ffcc66&style=for-the-badge)
-[![GitHub forks](https://img.shields.io/github/forks/hashirshoaeb/home?style=for-the-badge)](https://github.com/hashirshoaeb/star_book/network)
-[![GitHub issues](https://img.shields.io/github/issues/hashirshoaeb/home?color=ffcc66&style=for-the-badge)](https://github.com/hashirshoaeb/star_book/issues)
-[![GitHub license](https://img.shields.io/github/license/hashirshoaeb/home?style=for-the-badge)](https://github.com/hashirshoaeb/home/blob/master/LICENSE)
-[![Twitter Follow](https://img.shields.io/twitter/follow/hashirshoaeb?color=ffcc66&logo=twitter&logoColor=ffffff&style=for-the-badge)](https://twitter.com/hashirshoaeb)
+![GitHub contributors](https://img.shields.io/github/contributors/RafayFarrukh/home?color=ffcc66&style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/RafayFarrukh/home?color=ffcc66&style=for-the-badge)
+[![GitHub forks](https://img.shields.io/github/forks/RafayFarrukh/home?style=for-the-badge)](https://github.com/RafayFarrukh/star_book/network)
+[![GitHub issues](https://img.shields.io/github/issues/RafayFarrukh/home?color=ffcc66&style=for-the-badge)](https://github.com/RafayFarrukh/star_book/issues)
+[![GitHub license](https://img.shields.io/github/license/RafayFarrukh/home?style=for-the-badge)](https://github.com/RafayFarrukh/home/blob/master/LICENSE)
+[![Twitter Follow](https://img.shields.io/twitter/follow/RafayFarrukh?color=ffcc66&logo=twitter&logoColor=ffffff&style=for-the-badge)](https://twitter.com/RafayFarrukh)
 [![Node Version](https://img.shields.io/static/v1?label=Node&message=^20.10.0&color=026e00&style=for-the-badge)](https://nodejs.org)
 [![npm Version](https://img.shields.io/static/v1?label=npm&message=^10.2.3&color=cb0000&style=for-the-badge)](https://nodejs.org)
 
@@ -69,8 +69,7 @@
 
 # About the project
 
-[![Site preview](/public/social-image.png)](https://hashirshoaeb.github.io/home)
-
+[![Site preview](/public/social-image.png)](https://RafayFarrukh.github.io/home)
 
 ## Technology stack 🛠️
 
@@ -160,21 +159,21 @@ You should have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/
 
 10. To change the thumbnail image:
 
-    - Navigate to the "public" folder.  
-    - There you will see "social-image.png".  
-    - Delete it.   
-    - Take a screenshot of your version and rename it "social-image.png" and place it there.  
-    
-   Next time if you make changes, repeat from step 8.
+    - Navigate to the "public" folder.
+    - There you will see "social-image.png".
+    - Delete it.
+    - Take a screenshot of your version and rename it "social-image.png" and place it there.
 
-Facing issues? Feel free to contact at hashirshoaeb@gmail.com.
+Next time if you make changes, repeat from step 8.
+
+Facing issues? Feel free to contact at RafayFarrukh@gmail.com.
 
 # Support my work
 
 If you found this project valuable, please consider giving it a ⭐️ on GitHub. Your support keeps me motivated! If you'd like to further support my work, you can buy me a book. Thank you for your generosity!
 
 <div>
-  <a href="https://www.buymeacoffee.com/hashirshoaeb"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a book&emoji=📖&slug=hashirshoaeb&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
+  <a href="https://www.buymeacoffee.com/RafayFarrukh"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a book&emoji=📖&slug=RafayFarrukh&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
  </div>
 
 # Showcase 🚀
@@ -243,8 +242,8 @@ Novas contribuições e revisões na tradução são muito bem vindas!
 
 # Notice:
 
-This project has been **archived**. Means that it is no longer actively maintained by developer. Free free to fork, use and maintain your own version. You can check my new portfolio template [here](https://github.com/hashirshoaeb/portfolio)
+This project has been **archived**. Means that it is no longer actively maintained by developer. Free free to fork, use and maintain your own version. You can check my new portfolio template [here](https://github.com/RafayFarrukh/portfolio)
 
 # Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/hashirshoaeb/home.svg)](https://starchart.cc/hashirshoaeb/home)
+[![Stargazers over time](https://starchart.cc/RafayFarrukh/home.svg)](https://starchart.cc/RafayFarrukh/home)

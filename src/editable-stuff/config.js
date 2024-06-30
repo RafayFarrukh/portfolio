@@ -37,7 +37,7 @@ const mainBody = {
 //b) a link to an hosted image
 //      i.e:profilePictureLink:"www.picturesonline.com/johnDoeFancyAvatar.jpg",
 //c) image in "editable-stuff" directory and use require("") to import here,
-//      i.e: profilePictureLink: require("../editable-stuff/hashirshoaeb.png"),
+//      i.e: profilePictureLink: require("../editable-stuff/RafayFarrukh.png"),
 //d) If you do not want any picture to be displayed, just leave it empty :)
 //      i.e: profilePictureLink: "",
 // For Resume either provide link to your resume or import from "editable-stuff" directory
@@ -71,49 +71,49 @@ const repos = {
 // Leadership SECTION
 const leadership = {
   show: false,
-  heading: "Leadership",
+  heading: 'Leadership',
   message:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.',
   images: [
-    { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
-      label: "First slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+    {
+      img: require('../editable-stuff/rafay.png'),
+      label: 'First slide label',
+      paragraph: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
     },
-    { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
-      label: "Second slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+    {
+      img: require('../editable-stuff/rafay.png'),
+      label: 'Second slide label',
+      paragraph: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
     },
   ],
   imageSize: {
-    width:"615",
-    height:"450"
-  }
+    width: '615',
+    height: '450',
+  },
 };
 
 // SKILLS SECTION
 const skills = {
   show: true,
-  heading: "Skills",
+  heading: 'Skills',
   hardSkills: [
-    { name: "Javascript", value: 90 },
-    { name: "SQL", value: 90 },
-    { name: "React.js", value: 85 },
-    { name: "React-Native", value: 65 },
-    { name: "Node.js", value: 90 },
-    { name: "Express.js", value: 65 },
-    { name: "Aws Development", value: 55 },
+    { name: 'Javascript', value: 90 },
+    { name: 'SQL', value: 90 },
+    { name: 'React.js', value: 85 },
+    { name: 'React-Native', value: 65 },
+    { name: 'Node.js', value: 90 },
+    { name: 'Express.js', value: 65 },
+    { name: 'Aws Development', value: 55 },
   ],
   softSkills: [
-    { name: "Goal-Oriented", value: 80 },
-    { name: "Collaboration", value: 90 },
-    { name: "Positivity", value: 75 },
-    { name: "Adaptability", value: 85 },
-    { name: "Problem Solving", value: 75 },
-    { name: "Empathy", value: 90 },
-    { name: "Organization", value: 70 },
-    { name: "Creativity", value: 90 },
+    { name: 'Goal-Oriented', value: 80 },
+    { name: 'Collaboration', value: 90 },
+    { name: 'Positivity', value: 75 },
+    { name: 'Adaptability', value: 85 },
+    { name: 'Problem Solving', value: 75 },
+    { name: 'Empathy', value: 90 },
+    { name: 'Organization', value: 70 },
+    { name: 'Creativity', value: 90 },
   ],
 };
 
@@ -128,10 +128,10 @@ const getInTouch = {
 
 const experiences = {
   show: false,
-  heading: "Experiences",
+  heading: 'Experiences',
   data: [
     {
-      role: 'Backend Developer',// Here Add Company Name
+      role: 'Backend Developer', // Here Add Company Name
       companylogo: require('../assets/img/dell.png'),
       date: 'March 2023 – Present',
     },
@@ -140,12 +140,21 @@ const experiences = {
       companylogo: require('../assets/img/boeing.png'),
       date: 'Oct 2022 – Dev 2022',
     },
-  ]
-}
+  ],
+};
 
 // Blog SECTION
 // const blog = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export {
+  navBar,
+  mainBody,
+  about,
+  repos,
+  skills,
+  leadership,
+  getInTouch,
+  experiences,
+};
