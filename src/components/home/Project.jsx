@@ -19,7 +19,7 @@ const GITHUB_GRAPHQL_API = 'https://api.github.com/graphql';
 // Ensure you have a valid GitHub token with necessary permissions
 const graphQLClient = new GraphQLClient(GITHUB_GRAPHQL_API, {
   headers: {
-    Authorization: `Bearer ${process.env.REACT_APP_GITHUB_TOKEN}`, // Replace with your GitHub token
+    Authorization: `Bearer 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`, // Replace with your GitHub token
   },
 });
 
@@ -50,10 +50,6 @@ const Project = ({ heading, username, length }) => {
   const [projectsArray, setProjectsArray] = useState([]);
 
   const fetchPinnedRepos = useCallback(async () => {
-    console.log(
-      process.env.REACT_APP_GITHUB_TOKEN,
-      'process.env.REACT_APP_GITHUB_TOKEN',
-    );
     let repoList = [];
     try {
       const variables = { username };
