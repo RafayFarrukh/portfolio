@@ -61,7 +61,7 @@ const Navigation = forwardRef((props, ref) => {
       className='px-3 fixed-top'
       expand='lg'
     >
-      <StyledNavbarBrand href={process.env.PUBLIC_URL + '/#home'}>
+      <StyledNavbarBrand href={process.env.REACT_APP_PUBLIC_URL + '/#home'}>
         {`<${mainBody.firstName} />`}
       </StyledNavbarBrand>
       <BootstrapNavbar.Toggle
@@ -71,7 +71,7 @@ const Navigation = forwardRef((props, ref) => {
       <BootstrapNavbar.Collapse id='basic-navbar-nav'>
         <BootstrapNav className='navbar-nav mr-auto'>
           {repos.show && (
-            <StyledNavLink href={process.env.PUBLIC_URL + '/#projects'}>
+            <StyledNavLink href={process.env.REACT_APP_PUBLIC_URL + '/#projects'}>
               Projects
             </StyledNavLink>
           )}
@@ -83,12 +83,12 @@ const Navigation = forwardRef((props, ref) => {
             Resume
           </StyledNavLink>
           {about.show && (
-            <StyledNavLink href={process.env.PUBLIC_URL + '/#aboutme'}>
+            <StyledNavLink href={process.env.REACT_APP_PUBLIC_URL + '/#aboutme'}>
               About
             </StyledNavLink>
           )}
           {skills.show && (
-            <StyledNavLink href={process.env.PUBLIC_URL + '/#skills'}>
+            <StyledNavLink href={process.env.REACT_APP_PUBLIC_URL + '/#skills'}>
               Skills
             </StyledNavLink>
           )}
