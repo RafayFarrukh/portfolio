@@ -24,15 +24,12 @@
     "styled-components": "^6.1.11",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "custom-deploy": "node pages.js"
-  },
+"scripts": {
+  "prebuild": "cp .env.production .env",
+  "build": "react-scripts build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+},
   "engines": {
     "npm": "^10.2.3",
     "node": "^20.10.0"
