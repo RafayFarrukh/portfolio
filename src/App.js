@@ -82,7 +82,7 @@ const App = () => {
     <BrowserRouter basename={process.env.REACT_APP_PUBLIC_URL}>
       {navBar.show && <Navbar ref={titleRef} />}
       <Routes>
-        <Route path='/' exact element={<Home ref={titleRef} />} />
+        <Route path='/portfolio' exact element={<Home ref={titleRef} />} />
       </Routes>
       {/* {false && <Route path="/blog" exact component={Blog} />}
       {false && <Route path="/blog/:id" component={BlogPost} />} */}
