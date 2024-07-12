@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import {
   navBar,
   mainBody,
@@ -8,20 +8,19 @@ import {
   leadership,
   skills,
   getInTouch,
-  experiences
-} from "./editable-stuff/config.js";
-import MainBody from "./components/home/MainBody";
-import AboutMe from "./components/home/AboutMe";
-import Project from "./components/home/Project";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import Skills from "./components/home/Skills";
+  experiences,
+} from './editable-stuff/config.js';
+import MainBody from './components/home/MainBody';
+import AboutMe from './components/home/AboutMe';
+import Project from './components/home/Project';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import Skills from './components/home/Skills';
 // import { Blog } from "./components/blog/Blog";
 // import BlogPost from "./components/blog/BlogPost";
-import GetInTouch from "./components/home/GetInTouch.jsx";
-import Leadership from "./components/home/Leadership.jsx";
-
-import Experience from "./components/home/Experience";
+import GetInTouch from './components/home/GetInTouch.jsx';
+import Leadership from './components/home/Leadership.jsx';
+import Experience from './components/home/Experience';
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -42,17 +41,13 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
-      {
-        experiences.show && (
-          <Experience experiences={experiences}/>
-        )
-      }
+      {experiences.show && <Experience experiences={experiences} />}
       {repos.show && (
         <Project
           heading={repos.heading}
           username={repos.gitHubUsername}
           length={repos.reposLength}
-          specfic={repos.specificRepos}
+          specific={repos.specificRepos}
         />
       )}
       {leadership.show && (
@@ -70,22 +65,22 @@ const Home = React.forwardRef((props, ref) => {
           softSkills={skills.softSkills}
         />
       )}
-      
     </>
   );
 });
 
 const App = () => {
   const titleRef = React.useRef();
-
+  console.log(
+    process.env.REACT_APP_GITHUB_TOKEN,
+    'process.env.REACT_APP_PUBLIC_URL',
+  );
   return (
     <BrowserRouter basename={process.env.REACT_APP_PUBLIC_URL}>
       {navBar.show && <Navbar ref={titleRef} />}
       <Routes>
         <Route path='/portfolio' exact element={<Home ref={titleRef} />} />
       </Routes>
-      {/* {false && <Route path="/blog" exact component={Blog} />}
-      {false && <Route path="/blog/:id" component={BlogPost} />} */}
       <Footer>
         {getInTouch.show && (
           <GetInTouch

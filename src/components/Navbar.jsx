@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef, forwardRef } from 'react';
 import { useScrollPosition } from '../hooks/useScrollPosition';
 import useResizeObserver from '../hooks/useResizeObserver';
+import { useNavigate } from 'react-router-dom';
 import {
   Navbar as BootstrapNavbar,
   Nav as BootstrapNav,
 } from 'react-bootstrap';
 import { mainBody, repos, about, skills } from '../editable-stuff/config.js';
-import { NavLink as CustomNavLink } from './home/migration';
 import styled from 'styled-components';
 
 const StyledNavbar = styled(BootstrapNavbar)`
@@ -21,20 +21,32 @@ const StyledNavbarBrand = styled(BootstrapNavbar.Brand)`
   font-size: 1.5rem;
 `;
 
-const StyledNavLink = styled(CustomNavLink)`
+const StyledNavLink = styled.div`
   color: #fff;
-  margin: 0 10px;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
   &:hover {
     color: #d5d5d5;
   }
 `;
-
+const StyledAnchor = styled.a`
+  color: #fff;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: #d5d5d5;
+  }
+`;
 const Navigation = forwardRef((props, ref) => {
   const [isTop, setIsTop] = useState(true);
   const [scrollPosition, setScrollPosition] = useState(0);
   const navbarMenuRef = useRef();
   const navbarDimensions = useResizeObserver(navbarMenuRef);
   const navBottom = navbarDimensions ? navbarDimensions.bottom : 0;
+  const navigate = useNavigate();
 
   useScrollPosition(
     ({ prevPos, currPos }) => {
@@ -54,6 +66,14 @@ const Navigation = forwardRef((props, ref) => {
       : setIsTop(true);
   }, [navBottom, navbarDimensions, ref, scrollPosition]);
 
+  const handleNavClick = (hash) => {
+    navigate(`/portfolio/${hash}`);
+    const element = document.getElementById(hash.slice(1));
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <StyledNavbar
       ref={navbarMenuRef}
@@ -61,7 +81,7 @@ const Navigation = forwardRef((props, ref) => {
       className='px-3 fixed-top'
       expand='lg'
     >
-      <StyledNavbarBrand href={process.env.REACT_APP_PUBLIC_URL + '/#home'}>
+      <StyledNavbarBrand onClick={() => handleNavClick('#portfolio')}>
         {`<${mainBody.firstName} />`}
       </StyledNavbarBrand>
       <BootstrapNavbar.Toggle
@@ -71,24 +91,24 @@ const Navigation = forwardRef((props, ref) => {
       <BootstrapNavbar.Collapse id='basic-navbar-nav'>
         <BootstrapNav className='navbar-nav mr-auto'>
           {repos.show && (
-            <StyledNavLink href={process.env.REACT_APP_PUBLIC_URL + '/#projects'}>
+            <StyledNavLink onClick={() => handleNavClick('#projects')}>
               Projects
             </StyledNavLink>
           )}
-          <StyledNavLink
+          <StyledAnchor
             href={about.resume}
             target='_blank'
             rel='noreferrer noopener'
           >
             Resume
-          </StyledNavLink>
+          </StyledAnchor>
           {about.show && (
-            <StyledNavLink href={process.env.REACT_APP_PUBLIC_URL + '/#aboutme'}>
+            <StyledNavLink onClick={() => handleNavClick('#aboutme')}>
               About
             </StyledNavLink>
           )}
           {skills.show && (
-            <StyledNavLink href={process.env.REACT_APP_PUBLIC_URL + '/#skills'}>
+            <StyledNavLink onClick={() => handleNavClick('#skills')}>
               Skills
             </StyledNavLink>
           )}
